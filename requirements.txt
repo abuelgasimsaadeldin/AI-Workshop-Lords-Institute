@@ -1,0 +1,9 @@
+numpy
+pandas
+torch
+torchvision
+opencv-python
+matplotlib
+ultralytics
+transformers
+huggingface_hub
