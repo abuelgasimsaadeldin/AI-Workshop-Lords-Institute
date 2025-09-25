@@ -15,9 +15,10 @@ generator = pipeline("text-generation", model="gpt2")
 def generate_text(user_input):
     output = generator(
         user_input,
-        max_length=60,
-        num_return_sequences=1,
-        pad_token_id=50256
+        max_new_tokens=50,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.9
     )
     return output[0]["generated_text"]
 

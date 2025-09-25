@@ -12,11 +12,6 @@ def get_response(user_input):
     )
     return completion.choices[0].message.content
 
-# Alternative models:
-# tiiuae/falcon-7b-instruct
-# EleutherAI/gpt-j-6B
-# EleutherAI/gpt-neo-2.7B
-
 # Function to handle sending a message
 def send_message(event=None):
     user_input = entry.get()
